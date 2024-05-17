@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Access Denied</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container mt-5">
+  <div class="card">
+    <div class="card-body">
+      <h1>Access Denied</h1>
+      <p>You do not have permission to access the requested resource.</p>
+      <p>Please <a th:href="@{/Login}">log in</a> again with the appropriate credentials.</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
